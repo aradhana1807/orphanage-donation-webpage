@@ -8,7 +8,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Sunshine Smile Foundation</a>
+        <a href="#" class="logo">Sunshine Foundation</a>
         <div class="topnav"> </div>
         <ul>
             <li><a href="#index.html">Home</a></li>
@@ -64,13 +64,21 @@
             </div>
 
             <div class="con1">
-                <img src="images/indian-orphanage-children-4079.jpg" alt="kids" class="img">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/e5QPNOxamGo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
 
             </div>
         </div>
 
     </section>
-
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    </script>
 
 </body>
 

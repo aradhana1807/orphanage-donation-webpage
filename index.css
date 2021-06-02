@@ -12,11 +12,27 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 40px 100px;
+    padding: 20px 100px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+    background-color: #fff;
+    padding-right: 40px, 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo{
+    color: #111;
+
+}
+
+header.sticky ul li a{
+    color: #111;
 }
 
 header .logo{
@@ -124,7 +140,10 @@ section{
     margin-bottom: 30px;
     color: #111;
 }
-
+.heading h2{
+    font-weight: 600;
+    font-size: 30px;
+}
 .about{
     min-height: 100vh;
 }
@@ -132,10 +151,15 @@ section{
     display: flex;
     justify-content: space-between;
 }
+
+.content-box{
+    padding: 30px;
+}
 .content-box h3{
     font-size: 24px;
     margin-bottom: 10px;
 }
-.con1 img{
-    width: 100%;
+
+.con1{
+    min-height: 50%;
 }

@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Now | Orphanage Donation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="donate-banner">
+        <div class="donate-text">
+            <h2>Let's <br> <span>Donate.</span></h2>
+            <h3>To Make A Difference </h3>
+            <a href="#" class="btn"><span>Donate</span></a>
+
+            <script>
+                const btn = document.querySelector('.btn');
+                btn.onmousemove = function (e) {
+                    const x = e.pageX - btn.offsetLeft;
+                    const y = e.pageY - btn.offsetTop;
+
+                    btn.style.setProperty('--x', x + 'px');
+                    btn.style.setProperty('--y', y + 'px');
+
+                }
+            </script>
+
+        </div>
+
+
+    </section>
+
+
+</body>
+
+</html>

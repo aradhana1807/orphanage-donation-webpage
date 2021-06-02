@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+section{
+    padding: 100px;
+}
+
+.donate-banner{
+    position: relative;
+    min-height: 100vh;
+    background: url("images/indian-orphanage-children-5772.jpg");
+    background-size: cover ;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.donate-banner h2{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.donate-banner h2 span{
+    font: 1.5em;
+    font-weight: 800;
+}
+
+.donate-banner h3{
+    font-size: 1.5em ;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background: #363636;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.btn span{
+    position: relative;
+    z-index: 1;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%, -50%);
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    background-color: rgb(113, 113, 223);
+    transition: width 0.5s, height 0.5s;
+}
+
+.btn:hover::before {
+    width: 150px;
+    height: 150px;
+}

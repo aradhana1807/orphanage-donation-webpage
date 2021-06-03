@@ -8,19 +8,18 @@
 
 <body>
     <header>
-        <a href="#" class="logo">Sunshine Foundation</a>
-        <div class="topnav"> </div>
-        <ul>
-            <li><a href="#index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Contact</a></li>
+        <a href="index.html" class="logo">Sunshine Foundation</a>
+        <div class="topnav" onclick="toggleMenu();"> </div>
+        <ul class="navbar">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
 
     </header>
 
 
-    <section class="donate-banner">
+    <section id="home" class="donate-banner">
         <div class="donate-text">
             <h2>Let's <br> <span>Donate.</span></h2>
             <h3>To Make A Difference </h3>
@@ -48,8 +47,11 @@
             <div class="content-box con1">
                 <h3>Lorem Ipsum </h3>
                 <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Itaque architecto, natus, non, rerum vitae
-                    sunt voluptatem recusandae soluta esse
+                    Itaque architecto, natus, non, rerum vitae sunt voluptatem recusandae soluta esse
+                    qui iusto accusantium illum dolores tempore quisquam culpa
+                    tenetur repellendus nemo?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Itaque architecto, natus, non, rerum vitae sunt voluptatem recusandae soluta esse
                     qui iusto accusantium illum dolores tempore quisquam culpa
                     tenetur repellendus nemo?
                     <br>
@@ -78,7 +80,27 @@
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        function toggleMenu() {
+            var menuToggle = document.querySelector('.topnav');
+            var navBar = document.querySelector('.navbar');
+            menuToggle.classList.toggle('active');
+            navBar.classList.toggle('active');
+        }
     </script>
+
+
+
+    <div id="contact" class="bottom-container">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <a href="https://www.youtube.com/channel/UCWGbfEHApybVbI2oJSp1xmQ" target="_blank" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-envelope"></a>
+        <a href="https://github.com/aradhana1807" target="_blank" class="fa fa-github"></a>
+        <a href="#" class="fa fa-rss"></a>
+    </div>
+
 
 </body>
 

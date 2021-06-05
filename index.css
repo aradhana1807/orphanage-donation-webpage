@@ -155,6 +155,7 @@ section{
 .content-box{
     padding: 30px;
 }
+
 .content-box h3{
     font-size: 24px;
     margin-bottom: 10px;
@@ -178,7 +179,13 @@ section{
     text-decoration: none;
     margin: 10px 20px;
   }
-  
+
+ .fa-linkedin{
+    background: rgb(64, 116, 238);
+    color: white;
+    border-radius: 50%;
+
+ }
   .fa-youtube {
     background: #bb0000;
     color: white;
